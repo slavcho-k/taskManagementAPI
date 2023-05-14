@@ -53,7 +53,7 @@ class TaskService(
             existingTask.name = updatedTask.name
             existingTask.description = updatedTask.description
             taskRepository.save(existingTask)
-            ResponseEntity.ok("Updated task")
+            ResponseEntity.ok("Updated task wwith id $id")
         } else {
             ResponseEntity.notFound().build()
         }
